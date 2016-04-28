@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
+	autoprefixer = require('gulp-autoprefixer'),
 	sass = require('gulp-sass'),
 	pug = require('gulp-pug'),
 	reload = browserSync.reload;
@@ -31,6 +32,7 @@ var gulp = require('gulp'),
  gulp.task('sass', function(){
  	return gulp.src('./app/sass/*.sass')
  		.pipe(sass())
+		.pipe(autoprefixer('last 2 version', 'safari 6', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
  		.pipe(gulp.dest('./dist/css'))
  		.pipe(reload({ stream: true }));
  });

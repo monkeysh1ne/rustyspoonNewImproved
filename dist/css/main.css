@@ -1,2 +1,7 @@
-body {
-  background-color: salmon; }
+.autoprefixerTest {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+  width: 200px;
+  height: 200px; }
