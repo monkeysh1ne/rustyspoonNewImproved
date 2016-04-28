@@ -1,13 +1,30 @@
 doctype
-html
+html(lang="en")
 	head
-		title Test pug
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title RustySpoon Web Design
+		link(rel="stylesheet" href="./css/bootstrap.css")
+		link(rel="stylesheet" href="./css/get-shit-done.css")
 		link(rel="stylesheet" href="./css/main.css")
-	body
-		h1 This was build using pug &amp; sass
-		p  ..and it seems to work! :)
-		p Let's see what happens when I save...
-		p <strong>Awesome</strong> things are going to happen today!! =D
 
-		.autoprefixerTest
-			p what will happen!?
+	body
+		.container-fluid
+			.row
+				.col-md-8.col-md-offset-2
+					section.header
+						h1 H1 in 'header' section
+						h2 H2 in 'header' section
+						h3 H3 in 'header' section
+						h4 H4 in 'header' section
+						h5 H5 in 'header' section
+
+					section.footer
+						h1 This heading is in the footer!
+						script(src="js/jquery-1.10.2.js")
+						script(src="js/bootstrap.js")
+
+
+
+
