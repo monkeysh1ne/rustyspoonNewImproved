@@ -8,23 +8,27 @@ html(lang="en")
 		link(rel="stylesheet" href="./css/bootstrap.css")
 		link(rel="stylesheet" href="./css/get-shit-done.css")
 		link(rel="stylesheet" href="./css/main.css")
+		link(href='https://fonts.googleapis.com/css?family=Lora|Open+Sans' rel='stylesheet' type='text/css')
 
 	body
-		.container-fluid
+		.container.topBanner
+			.bannerLeft
+				h1 Welcome to <span class="rusty">RustySpoon</span>
+			.bannerRight
+				h1 Web Design
+				.logoTop
+					img#rsLogoSml(src="img/rsLogo.png")
+
+		.container
 			.row
-				.col-md-8.col-md-offset-2
-					section.header
-						h1 H1 in 'header' section
-						h2 H2 in 'header' section
-						h3 H3 in 'header' section
-						h4 H4 in 'header' section
-						h5 H5 in 'header' section
+				.col-md-12
+					section.main
+						p main stuff here...
 
 					section.footer
-						h1 This heading is in the footer!
-						script(src="js/jquery-1.10.2.js")
-						script(src="js/bootstrap.js")
-
+						p ©2016 RustySpoon Web Design
+					script(src="js/jquery-1.10.2.js")
+					script(src="js/bootstrap.js")
 
 
 

@@ -1,5 +1,61 @@
-.header
-	background-color: plum
+body
+	font-family: 'Open Sans', sans-serif;
+
+
+.topBanner
+	color: #000
+	width: 100vw
+	position: relative
+	top: 0
+	left: 0
+	background-color: #000
+	margin-bottom: 15px
+	h1
+		font-family: 'Lora', serif
+		color: #fff
+		text-align: left
+		.bannerLeft
+			display: inline-block
+			min-width: 50vw
+
+	.bannerRight
+		min-width: 414px
+		margin-left: 300px
+		margin-top: -26px
+		text-align: left
+
+
+.main
+	margin-top: 58px
+
+
+
+#rsLogoSml
+	position: fixed
+	top: 45px
+	right: 50px
+
 
 .footer
-	background-color: mistyrose
+	background-color: #000
+	position: fixed
+	width: 100vw
+	height: 10vh
+	color: #fff
+	bottom: 0
+	left: 0
+	text-align: right
+	p
+		margin-right: 1vw
+
+.rusty
+	color: #aa4400
+
+//toggle logoTop view for smaller devices and adjust topBanner to display sgl col (width<850px)
+@media (max-width: 850px)
+	.logoTop
+		visibility: hidden
+	.topBanner .bannerRight
+		margin-left: 0px
+		font-size: 26px
+
