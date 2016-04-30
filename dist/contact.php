@@ -19,9 +19,9 @@ if ($_POST['submit']) {
         $result = '<div class="alert alert-danger" role="alert"><strong>Woops, there is an error.</strong>  Please correct the following: '.$error.'</div>';
     } else {
         mail("enquiries@rustyspoonweb.com","Contact message",
-             "Name: ".$_POST['name']."<br/>".
-            "Email: ".$_POST['email']."<br/>".
-            "Message: ".$_POST['message']);
+            "Name: ".$_POST['name'].
+            "      Email: ".$_POST['email'].
+            "   Message: ".$_POST['message']);
 
             $result = '<div class="alert alert-success" role="alert">Thank you, we\'ll be in touch shortly.</div>';
         }
