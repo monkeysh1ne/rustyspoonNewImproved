@@ -22,13 +22,21 @@ body {
     margin-top: -26px;
     text-align: left; }
 
-.main {
-  margin-top: 58px; }
+.container.main {
+  margin: 0 auto;
+  margin-top: 80px; }
 
 #rsLogoSml {
   position: fixed;
   top: 45px;
   right: 50px; }
+
+.headShot p {
+  text-align: center; }
+
+.headShot img {
+  display: block;
+  margin: 0 auto; }
 
 .footer {
   background-color: #000;
@@ -50,4 +58,10 @@ body {
     visibility: hidden; }
   .topBanner .bannerRight {
     margin-left: 0px;
-    font-size: 26px; } }
+    font-size: 26px; }
+  .main {
+    margin-top: 15px; } }
+
+@media (min-width: 614px) and (max-width: 849px) {
+  .topBanner .bannerRight {
+    margin-left: 300px; } }
