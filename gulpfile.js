@@ -47,7 +47,11 @@ gulp.task('pug', function() {
  * Serve and watch the sass/pug files for changes
  */
  gulp.task('default', ['sass', 'templates'], function() {
- 	browserSync({server: './dist'});
+ 	browserSync({
+ 		server: {
+ 			baseDir: './dist'
+ 		}
+ 	});
 
  	gulp.watch('./app/sass/*.sass', ['sass']);
  	gulp.watch('./app/*.pug', ['pug-watch']);

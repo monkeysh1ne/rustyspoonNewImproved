@@ -16,16 +16,16 @@ if ($_POST['submit']) {
     }
 
     if ($error) {
-        $result = "Bugger!, there is an error.  Please correct the following: $error";
+        $result = '<div class="alert alert-danger" role="alert"><strong>Woops, there is an error.</strong>  Please correct the following: '.$error.'</div>';
+    } else {
+        mail("enquiries@rustyspoonweb.com","Contact message",
+             "Name: ".$_POST['name']."<br/>".
+            "Email: ".$_POST['email']."<br/>".
+            "Message: ".$_POST['message']);
+
+            $result = '<div class="alert alert-success" role="alert">Thank you, we\'ll be in touch shortly.</div>';
+        }
     }
-}
-
-
-
-
-
-
-
 
 ?>
 
@@ -38,7 +38,7 @@ if ($_POST['submit']) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RustySpoon Web Design - Contact Us</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/get-shit-done.css">
+    <!--<link rel="stylesheet" href="./css/get-shit-done.css">-->
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet" type="text/css">
 </head>
@@ -57,16 +57,16 @@ if ($_POST['submit']) {
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <h1>Contact Form</h1>
-                    <?php echo $result; ?>
+                    <?php echo $result; ?><!--display success/error messages for form-->
                     <p>Send a message via the form below</p>
                     <form method="post" action="" role="form">
 
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder"Your name" value="<?php echo $_POST['name'];?>">
+                            <input type="text" name="name" class="form-control" placeholder="Your name" value="<?php echo $_POST['name'];?>">
                         </div>
 
                        <div class="form-group">
-                            <input type="text" name="email" class="form-control" placeholder"Your email" value="<?php echo $_POST['email'];?>">
+                            <input type="text" name="email" class="form-control" placeholder="Your email" value="<?php echo $_POST['email'];?>">
                         </div>
 
                        <div class="form-group">
@@ -79,7 +79,7 @@ if ($_POST['submit']) {
                             </label>
                         </div>
 
-                        <div align="center"
+                        <div align="center">
                             <input type="submit" name="submit" class="btn btn-default" value="Send messsage"/>
                         </div>
 

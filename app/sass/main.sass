@@ -1,18 +1,23 @@
+$lilywhite_resene: #e9eeeb
+$blackpearl_resene: #1e272c
+
+
 body
 	font-family: 'Open Sans', sans-serif
+	background-color: $lilywhite_resene
 
 
 .topBanner
-	color: #000
+	color: $lilywhite_resene
 	width: 100vw
 	position: relative
 	top: 0
 	left: 0
-	background-color: #000
+	background-color: $blackpearl_resene
 	margin-bottom: 15px
 	h1
 		font-family: 'Lora', serif
-		color: #fff
+		color: $lilywhite_resene
 		text-align: left
 		.bannerLeft
 			display: inline-block
@@ -36,17 +41,18 @@ body
 .headShot
 	p
 		text-align: center
+		margin-top: 1em
 	img
 		display: block
 		margin: 0 auto
 
 
 .footer
-	background-color: #000
+	background-color: $blackpearl_resene
 	position: fixed
 	width: 100vw
 	height: 10vh
-	color: #fff
+	color: $lilywhite_resene
 	bottom: 0
 	left: 0
 	text-align: right
@@ -55,7 +61,7 @@ body
 
 .rusty
 	color: #aa4400
-	font-family: 
+
 
 //toggle logoTop view for smaller devices and adjust topBanner to display sgl col (width<850px)
 @media (max-width: 850px)

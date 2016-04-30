@@ -1,17 +1,18 @@
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e9eeeb; }
 
 .topBanner {
-  color: #000;
+  color: #e9eeeb;
   width: 100vw;
   position: relative;
   top: 0;
   left: 0;
-  background-color: #000;
+  background-color: #1e272c;
   margin-bottom: 15px; }
   .topBanner h1 {
     font-family: 'Lora', serif;
-    color: #fff;
+    color: #e9eeeb;
     text-align: left; }
     .topBanner h1 .bannerLeft {
       display: inline-block;
@@ -32,18 +33,19 @@ body {
   right: 50px; }
 
 .headShot p {
-  text-align: center; }
+  text-align: center;
+  margin-top: 1em; }
 
 .headShot img {
   display: block;
   margin: 0 auto; }
 
 .footer {
-  background-color: #000;
+  background-color: #1e272c;
   position: fixed;
   width: 100vw;
   height: 10vh;
-  color: #fff;
+  color: #e9eeeb;
   bottom: 0;
   left: 0;
   text-align: right; }
